@@ -1,0 +1,149 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+}
+
+body {
+  background-color: #090b1a;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 20% 2%;
+}
+
+.attribution {
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: #1b1938;
+  width: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 801px;
+}
+
+.card .card-image-m {
+  position: relative;
+  height: 242.203px;
+}
+
+.card .card-image-m .overlay {
+  position: absolute;
+  background-color: rgba(74, 14, 113, 0.699);
+  width: 100%;
+  height: 100%;
+}
+
+.card .card-image-m img {
+  width: 100%;
+}
+
+.card .card-body {
+  padding: 2.5rem 1.5rem;
+}
+
+.card .card-body .main-heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card .card-body .main-heading,
+.card .card-body .stat {
+  color: white;
+}
+
+.card .card-body .stat {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .card-body .main-paragraph {
+  line-height: 1.8;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 2.5rem;
+}
+
+.card .card-body .stat-heading {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.card .card-body span {
+  color: #aa5cdb;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    width: 1080px;
+    height: 446px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  .card .card-image-m {
+    display: none;
+  }
+  .card .card-body {
+    padding: 65px 100px 0 70px;
+  }
+  .card .card-body .main-heading {
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+  }
+  .card .card-body .main-paragraph {
+    margin-bottom: 5rem;
+    font-size: 0.95rem;
+  }
+  .card .card-body .stats {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card-image-d {
+    position: relative;
+  }
+  .card-image-d .overlay {
+    position: absolute;
+    background-color: rgba(74, 14, 113, 0.699);
+    width: 100%;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

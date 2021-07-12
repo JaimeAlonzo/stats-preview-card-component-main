@@ -1,0 +1,144 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+}
+
+body {
+  background-color: $very-dark-blue;
+  color: white;
+  display: grid;
+  place-items: center;
+  padding: 20% 2%;
+}
+
+.attribution {
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: $dark-blue;
+  width: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 801px;
+
+
+  .card-image-m {
+    position: relative;
+    height: 242.203px;
+    .overlay {
+      position: absolute;
+      background-color: hsla(276, 78%, 25%, 0.699);
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-body {
+    padding: 2.5rem 1.5rem;
+
+    .main-heading {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .main-heading,
+    .stat {
+      color: $white;
+    }
+
+    .stat {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .main-paragraph {
+      line-height: 1.8;
+      font-size: 16px;
+      color: $white-p;
+      margin-bottom: 2.5rem;
+    }
+
+    .stat-heading {
+      color: $white-s;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 1.5rem;
+    }
+    span {
+      color: $soft-violet;
+    }
+  }
+}
+
+@include media-desktop{
+  body{
+    padding: 0;
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card{
+    width: 1080px;
+    height: 446px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    .card-image-m{
+      display: none;
+    }
+
+    .card-body{
+      padding: 65px 100px 0 70px;
+
+      .main-heading{
+        margin-bottom: 2rem;
+        font-size: 2.3rem;
+      }
+
+      .main-paragraph{
+        margin-bottom: 5rem;
+        font-size: 0.95rem;
+      }
+
+      .stats{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .card-image-d {
+    position: relative;
+    .overlay {
+      position: absolute;
+      background-color: hsla(276, 78%, 25%, 0.699);
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
